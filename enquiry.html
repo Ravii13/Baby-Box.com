@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+        Product Enquiry Form
+        </title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #e6f2ff;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 400px;
+            }
+            
+            h1 {
+                font-size: 24px;
+                color: #2c3e50;
+                margin-bottom: 20px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #2c3e50;
+            }
+                
+            label span {
+                color: red;
+            }
+                
+            input[type="text"],input[type="email"],textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+                    
+            input[type="text"]:focus,input[type="email"]:focus,textarea:focus {
+                border-color: #ffcc00;
+                outline: none;
+            }
+                
+            .btn {
+                background-color: #2c3e50;
+                color: #fff;
+                /* justify-items: center; */
+                padding: 5px 10px;
+                border:none;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 16px;
+                /* margin-left: 130px; */
+            }
+
+            .send{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                
+            .btn:hover {
+                background-color: #1a252f;
+            }
+                    
+            .description {
+                font-size: 12px;
+                color: #999;
+                margin-top: -15px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Product Enquiry Form
+            </h1>
+            <form>
+            <label for="name">
+                Name
+                    <span>
+                        *
+                    </span>
+            </label>
+            <input id="name" name="name" required type="text" placeholder="Full Name"/>
+            <label for="email">
+                Email address
+                    <span>
+                        *
+                    </span>
+            </label>
+            <input id="email" name="email" required="" type="email"placeholder="you@yourdomain.com"/>
+            <label for="phone">
+                Phone
+                    <span>
+                        *
+                    </span>
+            </label>
+            <input id="phone" name="phone" type="text" placeholder="Mobile no."/>
+            <label for="enquiry">
+                Enquiry
+                    <span>
+                        *
+                    </span>
+            </label>
+            <textarea id="enquiry" name="enquiry" required="" rows="4" placeholder="What would you like to know?"></textarea>
+            <div class="SEND">
+                <button class="btn" type="submit">
+                    SEND ENQUIRY
+                </button>
+            </div>    
+            </form>
+        </div>
+    </body>
+</html>
